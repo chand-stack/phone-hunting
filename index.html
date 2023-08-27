@@ -14,10 +14,20 @@
     <main class="container mx-auto ">
         <h1 class="text-center text-3xl font-semibold">Search your phone</h1>
         <section class="flex justify-center mb-10 mt-5">
-            <input type="text" placeholder="Search your phone" class="input input-bordered rounded-none rounded-l-lg w-full max-w-xs" /><button class="btn rounded-none rounded-r-lg text-white bg-blue-600 hover:bg-blue-900">Search</button>
+            <input id="search-field" type="text" placeholder="Search your phone" class="input input-bordered rounded-none rounded-l-lg w-full max-w-xs" /><button onclick="handleSearch()" class="btn rounded-none rounded-r-lg text-white bg-blue-600 hover:bg-blue-900">Search</button>
         </section>
 <section class="container mx-auto px-8 md:px-12 lg:px-28">
+    <section class="flex justify-center">
+        <div id="loading-spinner" class="hidden my-40">
+            <span class="w-16 loading loading-bars loading-lg"></span>
+        </div>
+    </section>
     <div id="phone-container" class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+    </div>
+</section>
+<section id="show-All" class="hidden">
+    <div class="justify-center flex mt-10">
+        <button class="btn btn-secondary bg-blue-600 hover:bg-blue-900 border-none">Show All</button>
     </div>
 </section>
     </main>
