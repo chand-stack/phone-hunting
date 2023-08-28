@@ -56,6 +56,7 @@ const handleShowDetail = async (id) => {
 const showPhoneDetails = (phone) => {
 console.log(phone)
   const phoneContainer = document.getElementById('show-modal-container');
+  phoneContainer.textContent=''
 
   const detaiModal = document.createElement('div')
   detaiModal.classList.add('class="space-y-1')
